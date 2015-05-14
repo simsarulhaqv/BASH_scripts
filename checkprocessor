@@ -51,3 +51,6 @@ else
 	echo "Virtualisation not checked"
 fi
 
+echo -n "Processor model is : "
+cat /proc/cpuinfo | grep "model name" | uniq |cut -d: -f2
+
